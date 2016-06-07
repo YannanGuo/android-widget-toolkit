@@ -1,4 +1,4 @@
-#一 InputType
+##一 InputType
 
 官方文档:https://developer.android.com/reference/android/text/InputType.html
 
@@ -6,7 +6,7 @@
 2. 只允许输入数字和英文字母:android:inputType="textVisiblePassword"
 3. 只允许输入 @ . 数字和英文字母:android:inputType="textEmailAddress"。
 
-#二 windowSoftInputMode
+##二 windowSoftInputMode
 
 官方文档:https://developer.android.com/guide/topics/manifest/activity-element.html
 
