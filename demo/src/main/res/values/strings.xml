@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android-widget-best-practice</string>
+    <string name="btn_toast">提示类控件</string>
 </resources>
