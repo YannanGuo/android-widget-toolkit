@@ -1,1 +1,1 @@
-include ':demo', ':widget'
+include ':demo', ':widget', ':drawable'

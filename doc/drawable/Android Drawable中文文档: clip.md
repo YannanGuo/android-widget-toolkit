@@ -1,0 +1,21 @@
+使用clip标签可以对drawable进行裁剪，在做进度条时很有用。通过设置level值控制裁剪多少，level取值范围为0~10000，默认为0，表示完全裁剪，图片将不可见；10000则完全不裁剪，可见完整图片。
+
+android:drawable 指定drawable资源，如果不设置该属性，也可以定义drawable类型的子标签
+android:clipOrientation 设置裁剪的方向，取值为以下两个值之一：
+
+horizontal 在水平方向上进行裁剪，条状的进度条就是水平方向的裁剪
+vertical 在垂直方向上进行裁剪
+android:gravity 设置裁剪的位置，可取值如下，多个取值用 | 分隔：
+
+top 图片放于容器顶部，不改变图片大小。当裁剪方向为vertical时，会裁掉图片底部
+bottom 图片放于容器底部，不改变图片大小。当裁剪方向为vertical时，会裁掉图片顶部
+left 图片放于容器左边，不改变图片大小，默认值。当裁剪方向为horizontal，会裁掉图片右边部分
+right 图片放于容器右边，不改变图片大小。当裁剪方向为horizontal，会裁掉图片左边部分
+center 图片放于容器中心位置，包括水平和垂直方向，不改变图片大小。当裁剪方向为horizontal时，会裁掉图片左右部分；当裁剪方向为vertical时，会裁掉图片上下部分
+fill 拉伸整张图片以填满容器的整个高度和宽度。这时候图片不会被裁剪，除非level设为了0，此时图片不可见
+center_vertical 图片放于容器垂直方向的中心位置，不改变图片大小。裁剪和center时一样
+center_horizontal 图片放于容器水平方向的中心位置，不改变图片大小。裁剪和center时一样
+fill_vertical 在垂直方向上拉伸图片以填满容器的整个高度。当裁剪方向为vertical时，图片不会被裁剪，除非level设为了0，此时图片不可见
+fill_horizontal 在水平方向上拉伸图片以填满容器的整个宽度。当裁剪方向为horizontal时，图片不会被裁剪，除非level设为了0，此时图片不可见
+clip_vertical 附加选项，裁剪基于垂直方向的gravity设置，设置top时会裁剪底部，设置bottom时会裁剪顶部，其他情况会同时裁剪顶部和底部
+clip_horizontal 附加选项，裁剪基于水平方向的gravity设置，设置left时会裁剪右侧，设置right时会裁剪左侧，其他情况会同时裁剪左右两侧
