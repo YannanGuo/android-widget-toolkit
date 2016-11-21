@@ -14,7 +14,7 @@ compile 'com.souche.android.sdk:fcwidget:1.0.0-SNAPSHOT'
 
 # 一 FlickerTextView
 
-![](http://git.souche.com/android-sdk/FCWidget/raw/master/art/screenshot_flicker_text_view.gif)
+![](/art/screenshot_flicker_text_view.gif)
 
 XML代码:
 
