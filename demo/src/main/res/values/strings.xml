@@ -1,4 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">android-widget-best-practice</string>
-    <string name="btn_toast">提示类控件</string>
+
+    <string name="app_name">FCWidget</string>
+    <string name="flicker">大风车, 只为帮你赚更多的钱</string>
+    <string name="toggle_animation">Toggle animation</string>
+    <string name="action_settings">Settings</string>
+
 </resources>

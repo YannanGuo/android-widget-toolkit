@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/fctagview_tv_tag"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/fctagview_background_yellow"
+          android:gravity="center"
+          android:paddingBottom="6dp"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:paddingTop="6dp"
+          android:textColor="@color/fcwidget_fc_c11"
+          tools:text="大风车"/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FCWidget_Flicker">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FCTagView">
+        <attr name="fcTagViewStyle" format="integer">
+            <enum name="tag_view_default" value="0x000000"/>
+            <enum name="tag_view_no_border" value="0x000001"/>
+        </attr>
+    </declare-styleable>
+</resources>
