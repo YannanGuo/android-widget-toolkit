@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.guoxiaoxing'
 
 android {
     compileSdkVersion ANDROID_BUILD_COMPILE_SDK_VERSION as int
@@ -27,5 +30,3 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.guoxiaoxing'
