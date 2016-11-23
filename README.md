@@ -1,16 +1,34 @@
 # 大风车Widget
 
+[![](https://jitpack.io/v/guoxiaoxing/android-gxwidget.svg)](https://jitpack.io/#guoxiaoxing/android-gxwidget)
+
+添加依赖
+
+To get a Git project into your build:
+
+Step 1. Add it in your root build.gradle at the end of repositories:
+
 ```
-compile 'com.souche.android.sdk:fcwidget:1.0.0-SNAPSHOT'
+allprojects {
+    repositories {
+		...
+	    maven { url "https://jitpack.io" }
+    }
+}
+```
+
+Step 2. Add the dependency
+
+```
+dependencies {
+    compile 'com.github.guoxiaoxing:android-gxwidget:v1.0.0'
+}
 ```
 
 
-版本更迭:
+版本更迭
 
-1.0.0-SNAPSHOT -- 添加流光文字View
-
-1.0.0-SNAPSHOT -- 添加步骤统计View(也可以用作时间线)
-
+android-gxwidget:v1.0.0 -- 添加流光文字View, 添加步骤统计View(也可以用作时间线)
 
 # 一 FlickerTextView
 
