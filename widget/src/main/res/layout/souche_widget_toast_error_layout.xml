@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/souche_widget_shape_rectangle_black"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.souche.android.fcprompt.toast.ErrorToastView
+            android:id="@+id/errorView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10px"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/toastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="New Text"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/adapter_tv_sheet_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/souche_widget_selector_sheet_dialog_corners_none"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="@color/fcprompt_fc_c21"
+        android:textSize="16sp"
+        tools:text="删除"/>
+</LinearLayout>

@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="FCWidget_Flicker">
-        <attr name="reflectionColor" format="color"/>
+
+    <declare-styleable name="LoopView">
+        <attr name="lineColor" format="color"/>
+        <attr name="topBottomTextColor" format="color"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="canLoop" format="boolean"/>
+        <attr name="initPosition" format="integer"/>
+        <attr name="drawItemCount" format="integer"/>
     </declare-styleable>
 
-    <declare-styleable name="FCTagView">
-        <attr name="fcTagViewStyle" format="integer">
-            <enum name="tag_view_default" value="0x000000"/>
-            <enum name="tag_view_no_border" value="0x000001"/>
-        </attr>
+    <declare-styleable name="SCWheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" />
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <!--<attr name="wheel_item_align" format="enum">-->
+            <!--<enum name="center" value="0" />-->
+            <!--<enum name="left" value="1" />-->
+            <!--<enum name="right" value="2" />-->
+        <!--</attr>-->
     </declare-styleable>
+
 </resources>

@@ -1,5 +1,10 @@
-<manifest
-    package="com.guoxiaoxing.gxwidget">
-    <application/>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.guoxiaoxing.widget">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+    </application>
 
 </manifest>

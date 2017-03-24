@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/souche_widget_shape_rectangle_black"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:indeterminateDrawable="@drawable/souche_widget_loading_progress_white"/>
+
+        <ImageView
+            android:id="@+id/iv_loading_type"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/souche_widget_fengche_white"/>
+
+        <TextView
+            android:id="@+id/fc_loading_dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="15dp"
+            android:maxLines="1"
+            android:text="@string/prompt_loading"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+    </FrameLayout>
+</RelativeLayout>

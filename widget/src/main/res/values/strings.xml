@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Stepview</string>
+    <string name="app_name">library</string>
+    <string name="prompt_loading">正在加载...</string>
+
+    <string name="Year">年</string>
+    <string name="Month">月</string>
+    <string name="Day">日</string>
 </resources>

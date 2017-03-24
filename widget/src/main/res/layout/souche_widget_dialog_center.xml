@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/dialog_ll_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/fengche_dialog_parent_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/souche_widget_btn_corner_shape"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/dialog_list_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:textColor="@color/dialog_title_color"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:text="对话框标题"/>
+
+        <TextView
+            android:id="@+id/dialog_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:textColor="@color/dialog_title_color"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:text="1.自动获取二手车之家平台线索，抢先赢得商机
+2.美图新增节日模板，分享更炫酷"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/fcprompt_fc_c8"/>
+
+        <LinearLayout
+            android:id="@+id/fengche_dialog_bottom_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/dialog_list_tv_buttom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/souche_widget_btn_corner_selector"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@color/fcprompt_fc_c3"
+                android:textSize="16sp"
+                tools:text="暂不取消"/>
+
+            <View
+                android:id="@+id/dialog_button_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/fcprompt_fc_c8"/>
+
+            <TextView
+                android:id="@+id/dialog_list_tv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/souche_widget_btn_corner_selector"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@color/fcprompt_fc_c1"
+                android:textSize="16sp"
+                tools:text="取消订单"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

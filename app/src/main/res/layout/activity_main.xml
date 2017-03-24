@@ -1,18 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.guoxiaoxing.widget.MainActivity">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/toast_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Message Toast"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/multi_toast_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Multi Message Toast"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/base_show_dialog_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Loading Dialog"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/base_show_dialog_loading_custome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Loading Dialog Custom"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/base_show_dialog_center_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Center Dialog Two Button"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/base_show_dialog_center_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Center Dialog One Button"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/base_show_dialog_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Sheet Dialog"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/base_show_dialog_sheet_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Sheet List Dialog"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/base_show_dialog_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="List Dialog"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/base_show_dialog_option_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Option Picker"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/base_show_dialog_date_picker_ymd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Date Picker - YMD"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/base_show_dialog_date_picker_ym"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Date Picker - YM"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/base_show_dialog_date_picker_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Date Picker - Y"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/toast_btn_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="Toast Default"
+                android:textAllCaps="false"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/toast_btn_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="Toast Success"
+                android:textAllCaps="false"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/snackbar_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Yellow Normal Snackbar"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/snackbar_yellow_with_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Yellow Normal Snackbar with Arrow"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/snackbar_yellow_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Yellow Normal Snackbar Set Action"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/snackbar_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Black Normal Snackbar"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>
