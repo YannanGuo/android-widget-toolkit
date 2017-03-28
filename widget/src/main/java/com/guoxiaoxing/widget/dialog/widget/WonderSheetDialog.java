@@ -14,7 +14,7 @@ import com.guoxiaoxing.widget.animation.SlideEnter.SlideBottomEnter;
 import com.guoxiaoxing.widget.animation.SlideExit.SlideBottomExit;
 import com.guoxiaoxing.widget.dialog.adapter.SheetDialogAdapter;
 import com.guoxiaoxing.widget.dialog.entity.SheetAction;
-import com.guoxiaoxing.widget.dialog.widget.base.SCCBaseDialog;
+import com.guoxiaoxing.widget.dialog.widget.base.BaseDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ import java.util.List;
  * @author guoxiaoxing
  * @since 16/9/30 下午4:57
  */
-public class SCSheetListDialog extends SCCBaseDialog {
+public class WonderSheetDialog extends BaseDialog {
 
     private TextView mTvContent;
     private RecyclerView mRvAction;
@@ -37,7 +37,7 @@ public class SCSheetListDialog extends SCCBaseDialog {
 
     private ActionClickListener mActionClickListener;
 
-    public SCSheetListDialog(Context context) {
+    public WonderSheetDialog(Context context) {
         super(context);
     }
 
@@ -79,12 +79,12 @@ public class SCSheetListDialog extends SCCBaseDialog {
         return new SlideBottomExit();
     }
 
-    public SCSheetListDialog withContent(String content) {
+    public WonderSheetDialog withContent(String content) {
         mContent = content;
         return this;
     }
 
-    public SCSheetListDialog withAction(String actionCode, String actionName) {
+    public WonderSheetDialog withAction(String actionCode, String actionName) {
         SheetAction sheetAction = new SheetAction();
         sheetAction.setActionCode(actionCode);
         sheetAction.setActionName(actionName);
@@ -92,7 +92,7 @@ public class SCSheetListDialog extends SCCBaseDialog {
         return this;
     }
 
-    public SCSheetListDialog withActionClickListener(ActionClickListener listener) {
+    public WonderSheetDialog withActionClickListener(ActionClickListener listener) {
         mActionClickListener = listener;
         return this;
     }

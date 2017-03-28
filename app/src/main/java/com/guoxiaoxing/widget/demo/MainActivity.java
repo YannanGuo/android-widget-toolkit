@@ -2,7 +2,6 @@ package com.guoxiaoxing.widget.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -10,11 +9,10 @@ import android.widget.Toast;
 
 import com.guoxiaoxing.widget.dialog.entity.ListDialogEntity;
 import com.guoxiaoxing.widget.dialog.listener.OnButtonClickListener;
-import com.guoxiaoxing.widget.dialog.widget.SCDialog;
-import com.guoxiaoxing.widget.dialog.widget.SCListDialog;
-import com.guoxiaoxing.widget.dialog.widget.SCLoadingDialog;
-import com.guoxiaoxing.widget.dialog.widget.SCSheetDialog;
-import com.guoxiaoxing.widget.dialog.widget.SCSheetListDialog;
+import com.guoxiaoxing.widget.dialog.widget.WonderDialog;
+import com.guoxiaoxing.widget.dialog.widget.WonderListDialog;
+import com.guoxiaoxing.widget.dialog.widget.WonderLoadingDialog;
+import com.guoxiaoxing.widget.dialog.widget.WonderSheetDialog;
 import com.guoxiaoxing.widget.dialog.widget.picker.SCDatePicker;
 import com.guoxiaoxing.widget.dialog.widget.picker.SCOptionPicker;
 import com.guoxiaoxing.widget.dialog.widget.picker.model.IPickerModel;
@@ -38,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.base_show_dialog_center_two).setOnClickListener(this);
         findViewById(R.id.base_show_dialog_center_one).setOnClickListener(this);
         findViewById(R.id.base_show_dialog_sheet).setOnClickListener(this);
-        findViewById(R.id.base_show_dialog_sheet_list).setOnClickListener(this);
+        findViewById(R.id.base_show_dialog_sheet).setOnClickListener(this);
         findViewById(R.id.base_show_dialog_list).setOnClickListener(this);
         findViewById(R.id.base_show_dialog_option_picker).setOnClickListener(this);
         findViewById(R.id.base_show_dialog_date_picker_ymd).setOnClickListener(this);
@@ -59,62 +57,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = v.getId();
         switch (id) {
             case R.id.base_show_dialog_loading:
-                new SCLoadingDialog(MainActivity.this).show();
+                new WonderLoadingDialog(MainActivity.this).show();
                 break;
             case R.id.base_show_dialog_loading_custome:
-                new SCLoadingDialog(MainActivity.this, "自定义文案...", SCLoadingDialog.LOADING_TYPE_FENGCHE).show();
+                new WonderLoadingDialog(MainActivity.this, "自定义文案...", WonderLoadingDialog.LOADING_TYPE_FENGCHE).show();
                 break;
             case R.id.base_show_dialog_center_two:
-                final SCDialog SCDialog = new SCDialog(MainActivity.this);
-                SCDialog.withTitle("大风车")
+                final WonderDialog WonderDialog = new WonderDialog(MainActivity.this);
+                WonderDialog.withTitle("大风车")
                         .withContent("1.自动获取二手车之家平台线索，抢先赢得商机\n" +
                                 "2.美图新增节日模板，分享更炫酷")//
                         .withContentGravity(Gravity.LEFT)
                         .withLeftButton("取消", new OnButtonClickListener() {
                             @Override
                             public void onButtonClick() {
-                                SCDialog.dismiss();
+                                WonderDialog.dismiss();
                             }
                         })
                         .withRightButton("确定", new OnButtonClickListener() {
                             @Override
                             public void onButtonClick() {
-                                SCDialog.dismiss();
+                                WonderDialog.dismiss();
                             }
                         }).show();
                 break;
             case R.id.base_show_dialog_center_one:
-                final SCDialog SCDialog1 = new SCDialog(MainActivity.this);
-                SCDialog1.withTitle("大风车")
+                final WonderDialog WonderDialog1 = new WonderDialog(MainActivity.this);
+                WonderDialog1.withTitle("大风车")
                         .withContent("自动获取二手车之家平台线索，抢先赢得商机")
                         .withCenterButton("我知道了").show();
                 break;
             case R.id.base_show_dialog_sheet:
-                final SCSheetDialog SCSheetDialog = new SCSheetDialog(MainActivity.this);
-                SCSheetDialog.withContent("要删除这张图片吗?")
-                        .withButtomButton("取消", new OnButtonClickListener() {
-                            @Override
-                            public void onButtonClick() {
-                                SCSheetDialog.dismiss();
-                            }
-                        })
-                        .withTopButton("删除", new OnButtonClickListener() {
-                            @Override
-                            public void onButtonClick() {
-                                SCSheetDialog.dismiss();
-                            }
-                        }).show();
-                break;
-            case R.id.base_show_dialog_sheet_list:
-                final SCSheetListDialog SCSheetListDialog = new SCSheetListDialog(MainActivity.this);
-                SCSheetListDialog.withContent("您可以对文章进行以下操作")
+                final WonderSheetDialog WonderSheetDialog = new WonderSheetDialog(MainActivity.this);
+                WonderSheetDialog.withContent("您可以对文章进行以下操作")
                         //actionCode & actionName
                         .withAction("OPEN", "打开")
                         .withAction("OPEN_NEW", "在新标签页中打开")
                         .withAction("READ", "加入阅读列表")
                         .withAction("IMAGE", "存储图像")
                         .withAction("COPY", "拷贝")
-                        .withActionClickListener(new SCSheetListDialog.ActionClickListener() {
+                        .withActionClickListener(new WonderSheetDialog.ActionClickListener() {
                             @Override
                             public void actionClick(String actionCode, String actionName) {
                                 Toast.makeText(MainActivity.this, "你点击了：actionCode = " + actionCode + "，actionName = " + actionName, Toast.LENGTH_LONG).show();
@@ -130,10 +112,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     entity.setName("列表选项 " + i);
                     list.add(entity);
                 }
-                final SCListDialog SCListDialog = new SCListDialog(MainActivity.this);
-                SCListDialog.withTitle("请选择")//
+                final WonderListDialog WonderListDialog = new WonderListDialog(MainActivity.this);
+                WonderListDialog.withTitle("请选择")//
                         .withData(list)
-                        .withOnCheckedListener(new SCListDialog.OnCheckedListener() {
+                        .withOnCheckedListener(new WonderListDialog.OnCheckedListener() {
                             @Override
                             public void onChecked(String code, String name) {
                                 Toast.makeText(MainActivity.this, "你选中了：code = " + code + "，name = " + name, Toast.LENGTH_LONG).show();

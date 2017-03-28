@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.guoxiaoxing.widget.R;
 import com.guoxiaoxing.widget.dialog.listener.OnButtonClickListener;
-import com.guoxiaoxing.widget.dialog.widget.base.SCCBaseDialog;
+import com.guoxiaoxing.widget.dialog.widget.base.BaseDialog;
 
 /**
  * For more information, you can contact me by guoxiaoxing@souche.com
@@ -18,7 +18,7 @@ import com.guoxiaoxing.widget.dialog.widget.base.SCCBaseDialog;
  * @author guoxiaoxing
  * @since 16/9/30 下午4:57
  */
-public class SCDialog extends SCCBaseDialog {
+public class WonderDialog extends BaseDialog {
 
     private static final String DEFAULT_BTN_LEFT = "取消";
     private static final String DEFAULT_BTN_RIGHT = "确定";
@@ -44,7 +44,7 @@ public class SCDialog extends SCCBaseDialog {
     /**
      * @param context context
      */
-    public SCDialog(Context context) {
+    public WonderDialog(Context context) {
         super(context);
         setCancelable(false);
     }
@@ -119,59 +119,59 @@ public class SCDialog extends SCCBaseDialog {
     /**
      * set withTitle text(设置标题内容) @return MaterialDialog
      */
-    public SCDialog withTitle(String title) {
+    public WonderDialog withTitle(String title) {
         mTitle = title;
         return this;
     }
 
-    public SCDialog withContent(String content) {
+    public WonderDialog withContent(String content) {
         mContent = content;
         return this;
     }
 
-    public SCDialog withContentGravity(int gravity) {
+    public WonderDialog withContentGravity(int gravity) {
         mContentGravity = gravity;
         return this;
     }
 
-    public SCDialog withLeftButton(String title) {
+    public WonderDialog withLeftButton(String title) {
         mBtnLeftText = title;
         return this;
     }
 
-    public SCDialog withLeftButton(OnButtonClickListener listener) {
+    public WonderDialog withLeftButton(OnButtonClickListener listener) {
         mLeftOnButtonClickListener = listener;
         return this;
     }
 
-    public SCDialog withLeftButton(String title, OnButtonClickListener listener) {
+    public WonderDialog withLeftButton(String title, OnButtonClickListener listener) {
         mBtnLeftText = title;
         mLeftOnButtonClickListener = listener;
         return this;
     }
 
-    public SCDialog withRightButton(String title) {
+    public WonderDialog withRightButton(String title) {
         mBtnRightText = title;
         return this;
     }
 
-    public SCDialog withRightButton(OnButtonClickListener listener) {
+    public WonderDialog withRightButton(OnButtonClickListener listener) {
         mRightOnButtonClickListener = listener;
         return this;
     }
 
-    public SCDialog withRightButton(String title, OnButtonClickListener listener) {
+    public WonderDialog withRightButton(String title, OnButtonClickListener listener) {
         mBtnRightText = title;
         mRightOnButtonClickListener = listener;
         return this;
     }
 
-    public SCDialog withCenterButton(String title) {
+    public WonderDialog withCenterButton(String title) {
         mBtnCenterText = title;
         return this;
     }
 
-    public SCDialog withCenterButton(String title, OnButtonClickListener listener) {
+    public WonderDialog withCenterButton(String title, OnButtonClickListener listener) {
         mBtnCenterText = title;
         mRightOnButtonClickListener = listener;
         return this;

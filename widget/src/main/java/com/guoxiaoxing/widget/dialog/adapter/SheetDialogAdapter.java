@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.guoxiaoxing.widget.R;
 import com.guoxiaoxing.widget.dialog.entity.SheetAction;
-import com.guoxiaoxing.widget.dialog.widget.SCSheetListDialog;
+import com.guoxiaoxing.widget.dialog.widget.WonderSheetDialog;
 
 import java.util.List;
 
@@ -20,13 +20,13 @@ import java.util.List;
  */
 public class SheetDialogAdapter extends RecyclerView.Adapter<SheetDialogAdapter.ViewHolder> {
 
-    private SCSheetListDialog mSCSheetListDialog;
+    private WonderSheetDialog mWonderSheetDialog;
     private List<SheetAction> mActionList;
 
-    private SCSheetListDialog.ActionClickListener mActionClickListener;
+    private WonderSheetDialog.ActionClickListener mActionClickListener;
 
-    public SheetDialogAdapter(SCSheetListDialog SCSheetListDialog, List<SheetAction> actionList) {
-        mSCSheetListDialog = SCSheetListDialog;
+    public SheetDialogAdapter(WonderSheetDialog WonderSheetDialog, List<SheetAction> actionList) {
+        mWonderSheetDialog = WonderSheetDialog;
         mActionList = actionList;
 
     }
@@ -54,8 +54,8 @@ public class SheetDialogAdapter extends RecyclerView.Adapter<SheetDialogAdapter.
                 if (mActionClickListener != null && mActionList != null) {
                     mActionClickListener.actionClick(mActionList.get(holder.getAdapterPosition()).getActionCode(),
                             mActionList.get(holder.getAdapterPosition()).getActionName());
-                    if (mSCSheetListDialog != null) {
-                        mSCSheetListDialog.dismiss();
+                    if (mWonderSheetDialog != null) {
+                        mWonderSheetDialog.dismiss();
                     }
                 }
             }
@@ -83,11 +83,11 @@ public class SheetDialogAdapter extends RecyclerView.Adapter<SheetDialogAdapter.
         v.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
     }
 
-    public SCSheetListDialog.ActionClickListener getActionClickListener() {
+    public WonderSheetDialog.ActionClickListener getActionClickListener() {
         return mActionClickListener;
     }
 
-    public void setActionClickListener(SCSheetListDialog.ActionClickListener actionClickListener) {
+    public void setActionClickListener(WonderSheetDialog.ActionClickListener actionClickListener) {
         mActionClickListener = actionClickListener;
     }
 

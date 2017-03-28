@@ -19,7 +19,7 @@ import com.guoxiaoxing.widget.R;
  * @author guoxiaoxing
  * @since 16/9/30 下午5:02
  */
-public class SCLoadingDialog extends Dialog {
+public class WonderLoadingDialog extends Dialog {
 
     public static final String LOADING_TYPE_FENGCHE = "dfc";
     public static final String LOADING_TYPE_CHENIU = "cheniu";
@@ -29,11 +29,11 @@ public class SCLoadingDialog extends Dialog {
     private String mLoadingText = "正在加载...";
     private String mLoaddingType = LOADING_TYPE_TANGECHE;
 
-    public SCLoadingDialog(Context context) {
+    public WonderLoadingDialog(Context context) {
         super(context, R.style.fcprompt_dialog);
     }
 
-    public SCLoadingDialog(Context context, String loadingText, String loadingType) {
+    public WonderLoadingDialog(Context context, String loadingText, String loadingType) {
         super(context, R.style.fcprompt_dialog);
         if (!TextUtils.isEmpty(loadingText)) {
             mLoadingText = loadingText;
@@ -44,7 +44,7 @@ public class SCLoadingDialog extends Dialog {
         }
     }
 
-    public SCLoadingDialog(Context context, int theme) {
+    public WonderLoadingDialog(Context context, int theme) {
         super(context, theme);
     }
 

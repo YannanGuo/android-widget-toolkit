@@ -12,7 +12,7 @@ import com.guoxiaoxing.widget.R;
 import com.guoxiaoxing.widget.animation.BaseAnimatorSet;
 import com.guoxiaoxing.widget.animation.SlideEnter.SlideBottomEnter;
 import com.guoxiaoxing.widget.animation.SlideExit.SlideBottomExit;
-import com.guoxiaoxing.widget.dialog.widget.base.SCCBaseDialog;
+import com.guoxiaoxing.widget.dialog.widget.base.BaseDialog;
 import com.guoxiaoxing.widget.dialog.widget.picker.impl.SCWheelDayPicker;
 import com.guoxiaoxing.widget.dialog.widget.picker.impl.SCWheelMonthPicker;
 import com.guoxiaoxing.widget.dialog.widget.picker.impl.SCWheelPicker;
@@ -26,7 +26,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class SCDatePicker extends SCCBaseDialog implements SCWheelPicker.OnItemSelectedListener {
+public class SCDatePicker extends BaseDialog implements SCWheelPicker.OnItemSelectedListener {
 
     public static final String DATE_FORMAT_YMD = "yyyy/MM/dd";
     public static final String DATE_FORMAT_YM = "yyyy/MM";

@@ -11,7 +11,7 @@ import com.guoxiaoxing.widget.R;
 import com.guoxiaoxing.widget.animation.BaseAnimatorSet;
 import com.guoxiaoxing.widget.animation.SlideEnter.SlideBottomEnter;
 import com.guoxiaoxing.widget.animation.SlideExit.SlideBottomExit;
-import com.guoxiaoxing.widget.dialog.widget.base.SCCBaseDialog;
+import com.guoxiaoxing.widget.dialog.widget.base.BaseDialog;
 import com.guoxiaoxing.widget.dialog.widget.picker.impl.SCWheelOptionPicker;
 import com.guoxiaoxing.widget.dialog.widget.picker.impl.SCWheelPicker;
 import com.guoxiaoxing.widget.dialog.widget.picker.model.IPickerModel;
@@ -24,7 +24,7 @@ import java.util.List;
  * @author guoxiaoxing
  * @since 16/12/16 上午11:32
  */
-public class SCOptionPicker extends SCCBaseDialog {
+public class SCOptionPicker extends BaseDialog {
 
     private TextView mTvConfirm;
     private TextView mTvCancel;

@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.guoxiaoxing.widget.R;
 import com.guoxiaoxing.widget.dialog.adapter.ListDialogAdapter;
 import com.guoxiaoxing.widget.dialog.entity.ListDialogEntity;
-import com.guoxiaoxing.widget.dialog.widget.base.SCCBaseDialog;
+import com.guoxiaoxing.widget.dialog.widget.base.BaseDialog;
 
 import java.util.List;
 
@@ -21,7 +21,7 @@ import java.util.List;
  * @author guoxiaoxing
  * @since 16/9/30 下午4:57
  */
-public class SCListDialog extends SCCBaseDialog {
+public class WonderListDialog extends BaseDialog {
 
     private static final String DEFAULT_BTN_LEFT = "取消";
     private static final String DEFAULT_BTN_RIGHT = "确定";
@@ -40,7 +40,7 @@ public class SCListDialog extends SCCBaseDialog {
 
     private OnCheckedListener mOnCheckedListener;
 
-    public SCListDialog(Context context) {
+    public WonderListDialog(Context context) {
         super(context);
     }
 
@@ -88,27 +88,27 @@ public class SCListDialog extends SCCBaseDialog {
     /**
      * set withTitle text(设置标题内容) @return MaterialDialog
      */
-    public SCListDialog withTitle(String title) {
+    public WonderListDialog withTitle(String title) {
         mTitle = title;
         return this;
     }
 
-    public SCListDialog withLeftButton(String title) {
+    public WonderListDialog withLeftButton(String title) {
         mBtnLeftText = title;
         return this;
     }
 
-    public SCListDialog withRightButton(String title) {
+    public WonderListDialog withRightButton(String title) {
         mBtnRightText = title;
         return this;
     }
 
-    public SCListDialog withData(List<ListDialogEntity> data) {
+    public WonderListDialog withData(List<ListDialogEntity> data) {
         mData = data;
         return this;
     }
 
-    public SCListDialog withOnCheckedListener(OnCheckedListener listener) {
+    public WonderListDialog withOnCheckedListener(OnCheckedListener listener) {
         mOnCheckedListener = listener;
         return this;
     }
